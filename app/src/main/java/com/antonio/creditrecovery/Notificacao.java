@@ -1,7 +1,6 @@
 package com.antonio.creditrecovery;
 
 import android.app.IntentService;
-import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -36,17 +35,9 @@ public class Notificacao extends IntentService {
     }
 
     private void criarNotificacaoCadastro(String titulo, String mensagem) {
-        Notification notification = null;
-
-        notification = new Notification(R.mipmap.ic_launcher,
-                "Novo evento importante!",
-                System.currentTimeMillis());
-
         notificationManager = (NotificationManager)
                 this.getSystemService(Context.NOTIFICATION_SERVICE);
 
-
-        notification.flags = Notification.FLAG_ONGOING_EVENT;
 
         PendingIntent notificationPendingIntent = PendingIntent.getActivity(this, 0,
                     new Intent(this,Cadastro.class), 0);
@@ -56,22 +47,16 @@ public class Notificacao extends IntentService {
             builder.setSmallIcon(R.mipmap.ic_launcher);
             builder.setContentTitle(titulo);
             builder.setContentText(mensagem);
+            builder.setAutoCancel(false);
             builder.setContentIntent(notificationPendingIntent);
             notificationManager.notify(NOTIFICATION_ID + 1, builder.build());
     }
 
     private void criarNotificacaoConsulta(Intent intent,String titulo, String mensagem) {
-        Notification notification = null;
-
-        notification = new Notification(R.mipmap.ic_launcher,
-                "Novo evento importante!",
-                System.currentTimeMillis());
 
         notificationManager = (NotificationManager)
                 this.getSystemService(Context.NOTIFICATION_SERVICE);
 
-
-        notification.flags = Notification.FLAG_AUTO_CANCEL;
 
         Intent consulta  = new Intent(this,Consulta.class);
 
@@ -90,9 +75,10 @@ public class Notificacao extends IntentService {
 
         NotificationCompat.Builder builder =
                 new NotificationCompat.Builder(getApplicationContext());
-        builder.setSmallIcon(R.mipmap.ic_launcher);
+        builder.setSmallIcon(R.drawable.add);
         builder.setContentTitle(titulo);
         builder.setContentText(mensagem);
+        builder.setAutoCancel(true);
         builder.setContentIntent(notificationPendingIntent);
         notificationManager.notify(NOTIFICATION_ID + 2, builder.build());
     }

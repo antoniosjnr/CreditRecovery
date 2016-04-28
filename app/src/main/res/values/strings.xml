@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Credit Recovery</string>
+    <!-- Referente a Login -->
+    <string name="lbl_titulo1">Credit</string>
+    <string name="lbl_titulo2">Recovery</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_senha">Senha</string>
+    <string name="botao_entrar">Entrar</string>
+    <string name="rodape">Todos os direitos reservados - Antônio da Silva Jr.</string>
+    <string name="validacao_login">Login ou senha inválidos!</string>
+
+    <!-- Referente a menu -->
+    <string name="titulo_menu">Menu</string>
+
+    <!-- Referente a cadastro -->
+    <string name="cadastro_titulo">Cadastro financiamento</string>
+    <string name="cadastro_hint_campo_identificacao">Identificação</string>
+    <string name="cadastro_hint_campo_valortotal">Valor total</string>
+    <string name="cadastro_hint_campo_taxadejuros">%</string>
+    <string name="cadastro_descricao_toggle">Juros</string>
+    <string name="cadastro_campo_numeroparcelas">Número de parcelas</string>
+    <string name="botao_calcular">Calcular</string>
+
+    <!-- Referente a consulta -->
+    <string name="titulo_consulta">Consulta Simulações</string>
+    <string name="consulta_label_identificacao">Identificação: </string>
+    <string name="consulta_label_valorTotal">Valor total: </string>
+    <string name="consulta_label_numeroParcelas">Número parcelas: </string>
+    <string name="consulta_label_porcjuros">% Juros: </string>
+    <string name="consulta_label_tipoPessoa">Tipo Pessoa: </string>
+    <string name="consulta_label_valorParcela">Parcela: </string>
+    <string name="Juros">Juros</string>
+    <string name="pessoa_juridica">Pessoa Jurídica</string>
+    <string name="pessoa_fisica">Pessoa Física</string>
+
+    <string-array name="tipo_pessoa">
+        <item>@string/pessoa_juridica</item>
+        <item>@string/pessoa_fisica</item>
+    </string-array>
+
+</resources>

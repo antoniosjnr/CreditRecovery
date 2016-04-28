@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/corFundo"
+    tools:context="com.example.antonio.recalculodivida.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/icone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_titulo1"
+        android:id="@+id/lbl_titulo1"
+        android:textSize="@dimen/titulo_login_tamanho_fonte"
+        android:textColor="@color/corTitulo"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginTop="@dimen/titulo_login_margem_topo"
+        android:layout_marginLeft="@dimen/titulo_login_margem_esquerda"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_titulo2"
+        android:id="@+id/lbl_titulo2"
+        android:textSize="@dimen/titulo_login_tamanho_fonte"
+        android:textColor="@color/corTitulo"
+        android:layout_below="@+id/lbl_titulo1"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignParentTop="@+id/lbl_titulo1"
+        android:layout_marginLeft="@dimen/titulo_login_margem_esquerda"/>
+
+    <EditText
+        android:layout_width="@dimen/campos_login_largura"
+        android:layout_height="@dimen/campos_login_comprimento"
+        android:id="@+id/cmpLogin"
+        android:hint="@string/hint_login"
+        android:textSize="@dimen/campos_login_tamanho_fonte"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/campos_login_margem_topo"
+        />
+
+    <EditText
+        android:layout_width="@dimen/campos_login_largura"
+        android:layout_height="@dimen/campos_login_comprimento"
+        android:password="true"
+        android:ems="10"
+        android:textSize="@dimen/campos_login_tamanho_fonte"
+        android:id="@+id/cmpSenha"
+        android:hint="@string/hint_senha"
+        android:layout_below="@+id/cmpLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/campos_login_margem_espacamento"/>
+
+    <Button
+        android:layout_width="@dimen/campos_login_largura"
+        android:layout_height="@dimen/campos_login_comprimento"
+        android:text="@string/botao_entrar"
+        android:textAlignment="center"
+        android:id="@+id/btEntrar"
+        android:layout_below="@+id/cmpSenha"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/texto_botao"
+        android:background="@color/corBotaoFundo"
+        android:layout_marginTop="@dimen/campos_login_tamanho_texto_Botao"
+        android:tag="entrar"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rodape"
+        android:id="@+id/lbl_cabecalho"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/validacao_login"
+        android:id="@+id/textMensagem"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btEntrar"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/campos_login_tamanho_fonte"
+        android:textColor="@color/validacoes"/>
+</RelativeLayout>

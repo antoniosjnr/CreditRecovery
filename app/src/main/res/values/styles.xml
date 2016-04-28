@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="label_campo_consulta">
+        <item name="android:textSize">@dimen/consulta_tamanho_label</item>
+        <item name="android:textColor">@color/corTitulo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/cadastro_margem_entre_campos</item>
+    </style>
+
+    <style name="campo_consulta">
+        <item name="android:textSize">@dimen/cadastro_tamanho_fonte_campo</item>
+        <item name="android:textColor">@color/corTitulo</item>
+        <item name="android:layout_margin">@dimen/cadastro_margem_entre_campos</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:textSize">@dimen/cadastro_tamanho_fonte_campo</item>
+    </style>
+
+</resources>

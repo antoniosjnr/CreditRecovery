@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/corTitulo"
+        android:text="@string/titulo_consulta"
+        android:textSize="@dimen/titulo_login_tamanho_fonte"
+        android:layout_columnSpan="2"
+        android:layout_margin="@dimen/cadastro_margem_entre_campos"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consulta_label_identificacao"
+        android:id="@+id/lbl_identificacao"
+        style="@style/label_campo_consulta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/cmp_identificacao"
+        style="@style/campo_consulta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consulta_label_valorTotal"
+        android:id="@+id/lbl_valorTotal"
+        style="@style/label_campo_consulta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/cmp_valorTotal"
+        style="@style/campo_consulta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consulta_label_numeroParcelas"
+        android:id="@+id/lbl_numeroParcelas"
+        style="@style/label_campo_consulta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/cmp_numeroParcelas"
+        style="@style/campo_consulta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consulta_label_porcjuros"
+        android:id="@+id/lbl_percJuros"
+        style="@style/label_campo_consulta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/cmp_percJuros"
+        style="@style/campo_consulta"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consulta_label_tipoPessoa"
+        android:id="@+id/lbl_tipoPessoa"
+        style="@style/label_campo_consulta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/cmp_tipoPessoa"
+        style="@style/campo_consulta"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consulta_label_valorParcela"
+        android:id="@+id/lbl_valorParcela"
+        style="@style/label_campo_consulta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/cmp_valorParcela"
+        style="@style/campo_consulta"/>
+</GridLayout>

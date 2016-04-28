@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundo"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro_titulo"
+        android:textSize="@dimen/menu_tamanho_fonte"
+        android:textColor="@color/corTitulo"
+        android:layout_margin="@dimen/cadastro_margem_entre_campos"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cadastro_comprimento_campo"
+        android:id="@+id/campo_identificacao"
+        android:textSize="@dimen/cadastro_tamanho_fonte_campo"
+        android:layout_margin="@dimen/cadastro_margem_entre_campos"
+        android:hint="@string/cadastro_hint_campo_identificacao"
+        android:inputType="textCapCharacters"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/cadastro_comprimento_campo"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/campo_valor_total"
+        android:layout_margin="@dimen/cadastro_margem_entre_campos"
+        android:hint="@string/cadastro_hint_campo_valortotal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro_campo_numeroparcelas"
+        android:id="@+id/num_parcelas"
+        android:textColor="@color/corTitulo"
+        android:textSize="@dimen/campos_login_tamanho_fonte"
+        android:layout_margin="@dimen/cadastro_margem_entre_campos"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cadastro_comprimento_campo"
+        android:layout_margin="@dimen/cadastro_margem_entre_campos">
+
+        <SeekBar
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cadastro_comprimento_campo"
+            android:id="@+id/seekBar_parcelas" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cadastro_comprimento_campo"
+            android:id="@+id/text_parcelas"
+            android:textSize="@dimen/cadastro_tamanho_fonte_campo"
+            android:textColor="@color/corTitulo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cadastro_comprimento_campo"
+        android:layout_margin="@dimen/cadastro_margem_entre_campos">
+
+        <CheckBox
+            android:layout_weight="6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cadastro_comprimento_campo"
+            android:text="@string/Juros"
+            android:id="@+id/isJuros"
+            android:checked="false" />
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cadastro_comprimento_campo"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/perc_juros"
+            android:textSize="@dimen/cadastro_tamanho_fonte_campo"
+            android:hint="@string/cadastro_hint_campo_taxadejuros"
+            android:enabled="false"
+            />
+    </LinearLayout>
+
+    <Spinner
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cadastro_comprimento_campo"
+        android:id="@+id/spinner_tipo"
+        android:spinnerMode="dropdown"
+        android:layout_weight="0.34" />
+
+    <Button
+        android:layout_width="@dimen/campos_login_largura"
+        android:layout_height="@dimen/campos_login_comprimento"
+        android:text="@string/botao_calcular"
+        android:textAlignment="center"
+        android:id="@+id/btCalcular"
+        android:layout_gravity="center"
+        android:textSize="@dimen/campos_login_tamanho_texto_Botao"
+        android:textColor="@color/texto_botao"
+        android:background="@color/corBotaoFundo"
+        android:layout_marginTop="@dimen/campos_login_tamanho_texto_Botao"
+        android:onClick="onClick"/>
+
+</LinearLayout>

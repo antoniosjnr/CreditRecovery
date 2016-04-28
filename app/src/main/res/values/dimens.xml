@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--Referente a menu -->
+    <dimen name="icones_menu_margin">30sp</dimen>
+    <dimen name="menu_tamanho_fonte">32sp</dimen>
+
+    <!-- Referente a login -->
+    <dimen name="titulo_login_tamanho_fonte">36sp</dimen>
+    <dimen name="titulo_login_margem_topo">30sp</dimen>
+    <dimen name="titulo_login_margem_esquerda">15sp</dimen>
+    <dimen name="campos_login_largura">250sp</dimen>
+    <dimen name="campos_login_comprimento">40sp</dimen>
+    <dimen name="campos_login_tamanho_fonte">20sp</dimen>
+    <dimen name="campos_login_margem_topo">70sp</dimen>
+    <dimen name="campos_login_margem_espacamento">10sp</dimen>
+    <dimen name="campos_login_tamanho_texto_Botao">18sp</dimen>
+
+    <!-- Referente a cadastro -->
+
+    <dimen name="cadastro_comprimento_campo">40sp</dimen>
+    <dimen name="cadastro_tamanho_fonte_campo">20sp</dimen>
+    <dimen name="cadastro_margem_entre_campos">5sp</dimen>
+
+    <!-- Referente a consulta -->
+    <dimen name="consulta_tamanho_label">24sp</dimen>
+
+</resources>
